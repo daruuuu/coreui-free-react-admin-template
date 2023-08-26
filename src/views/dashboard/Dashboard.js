@@ -142,7 +142,7 @@ const Dashboard = () => {
                 Data Pasien
               </h4>
             </CCol>
-            <CCol sm={7} className="d-none d-md-block">
+            <CCol sm={7}>
               <CButtonGroup
                 role="group"
                 aria-label="Button group with nested dropdown"
@@ -151,7 +151,6 @@ const Dashboard = () => {
                 <CButton color="primary" onClick={() => handleDateSelectPasien(null)}>
                   All
                 </CButton>{' '}
-                {/* Tombol All untuk menampilkan semua data */}
                 <CDropdown variant="btn-group">
                   <CDropdownToggle color="primary">Dropdown</CDropdownToggle>
                   <CDropdownMenu>
@@ -223,7 +222,7 @@ const Dashboard = () => {
                 Data Pengunjung
               </h4>
             </CCol>
-            <CCol sm={7} className="d-none d-md-block">
+            <CCol sm={7}>
               <CButtonGroup
                 role="group"
                 aria-label="Button group with nested dropdown"
