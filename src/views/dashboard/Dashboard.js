@@ -137,12 +137,16 @@ const Dashboard = () => {
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
-            <CCol sm={5}>
-              <h4 id="traffic" className="card-title mb-0">
+            <CCol sm={12} md={5}>
+              <h4 id="traffic" className="card-title mb-0 text-center text-md-start">
                 Data Pasien
               </h4>
             </CCol>
-            <CCol sm={7}>
+            <CCol
+              sm={12}
+              md={7}
+              className="d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0"
+            >
               <CButtonGroup
                 role="group"
                 aria-label="Button group with nested dropdown"
@@ -217,12 +221,16 @@ const Dashboard = () => {
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
-            <CCol sm={5}>
-              <h4 id="traffic" className="card-title mb-0">
+            <CCol sm={12} md={5}>
+              <h4 id="traffic" className="card-title mb-0 text-center text-md-start">
                 Data Pengunjung
               </h4>
             </CCol>
-            <CCol sm={7}>
+            <CCol
+              sm={12}
+              md={7}
+              className="d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0"
+            >
               <CButtonGroup
                 role="group"
                 aria-label="Button group with nested dropdown"
