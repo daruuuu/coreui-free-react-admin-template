@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import 'react-app-polyfill/stable'
 import 'core-js'
 import React from 'react'
@@ -6,10 +7,13 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { Provider } from 'react-redux'
 import store from './store'
+import { DataProvider } from './views/dashboard/data-dashboard'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <App />
+    <DataProvider>
+      <App />
+    </DataProvider>
   </Provider>,
 )
 
